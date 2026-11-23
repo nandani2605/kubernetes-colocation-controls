@@ -58,4 +58,3 @@ ethics guidance of the co-location literature.
 
 ## License
 
-MIT (or the license of your choice — edit this line).
