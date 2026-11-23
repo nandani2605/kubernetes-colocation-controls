@@ -1,0 +1,141 @@
+REFERENCES
+
+[1] Y. Yarom and K. Falkner, "FLUSH+RELOAD: A high resolution, low noise, L3 cache side-channel attack," in Proc. 23rd USENIX Security Symp., 2014, pp. 719–732.
+
+[2] F. Liu, Y. Yarom, Q. Ge, G. Heiser, and R. B. Lee, "Last-level cache side-channel attacks are practical," in Proc. IEEE Symp. Security and Privacy (S&P), 2015, pp. 605–622, doi: 10.1109/SP.2015.43.
+
+[3] Z. Wu, Z. Xu, and H. Wang, "Whispers in the hyper-space: High-speed covert channel attacks in the cloud," in Proc. 21st USENIX Security Symp., 2012, pp. 159–173.
+
+[4] Y. Zhang, A. Juels, M. K. Reiter, and T. Ristenpart, "Cross-tenant side-channel attacks in PaaS clouds," in Proc. ACM SIGSAC Conf. Computer and Communications Security (CCS), 2014, pp. 990–1003, doi: 10.1145/2660267.2660356.
+
+[5] Z. N. Zhao, A. Morrison, C. W. Fletcher, and J. Torrellas, "Last-level cache side-channel attacks are feasible in the modern public cloud," in Proc. ACM ASPLOS, vol. 2, 2024, pp. 582–600, doi: 10.1145/3620665.3640403.
+
+[6] V. Varadarajan, T. Kooburat, B. Farley, T. Ristenpart, and M. M. Swift, "Resource-freeing attacks: Improve your cloud performance (at your neighbor's expense)," in Proc. ACM Conf. Computer and Communications Security (CCS), 2012, pp. 281–292, doi: 10.1145/2382196.2382228.
+
+[7] W. Shao, N. Nazari, B. Omidi, S. Rafatirad, K. N. Khasawneh, H. Homayoun, and C. Fang, "Bit of a close talker: A practical guide to serverless cloud co-location attacks," in Proc. Netw. Distrib. Syst. Security Symp. (NDSS), 2026, doi: 10.14722/ndss.2026.241376.
+
+[8] O. Jarkas, R. Ko, N. Dong, and R. Mahmud, "A container security survey: Exploits, attacks, and defenses," ACM Comput. Surv., vol. 57, no. 7, Feb. 2025, Art. no. 170, doi: 10.1145/3715001.
+
+[9] W. Attaoui, E. Sabir, H. Elbiaze, and M. Guizani, "VNF and CNF placement in 5G: Recent advances and future trends," IEEE Trans. Netw. Service Manag., vol. 20, no. 4, pp. 4698–4733, Dec. 2023, doi: 10.1109/TNSM.2023.3264005.
+
+[10] T. Ristenpart, E. Tromer, H. Shacham, and S. Savage, "Hey, you, get off of my cloud: Exploring information leakage in third-party compute clouds," in Proc. ACM CCS, 2009, pp. 199–212, doi: 10.1145/1653662.1653687.
+
+[11] Z. Xu, H. Wang, and Z. Wu, "A measurement study on co-residence threat inside the cloud," in Proc. 24th USENIX Security Symp., 2015, pp. 929–944. [Online]. Available: https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-xu.pdf
+
+[12] V. Varadarajan, Y. Zhang, T. Ristenpart, and M. Swift, "A placement vulnerability study in multi-tenant public clouds," in Proc. 24th USENIX Security Symp., 2015, pp. 913–928, arXiv:1507.03114.
+
+[13] C. Fang, H. Wang, N. Nazari, B. Omidi, A. Sasan, K. N. Khasawneh, S. Rafatirad, and H. Homayoun, "REPTTACK: Exploiting cloud schedulers to guide co-location attacks," in Proc. NDSS, 2022, doi: 10.14722/ndss.2022.23149.
+
+[14] M. Rossi, M. Beretta, D. Facchinetti, and S. Paraboschi, "Secure Kubernetes workload deployment with automated enforcement of cluster-defined policies," in Proc. IEEE Int. Conf. Cloud Computing Technology and Science (CloudCom), 2025, doi: 10.1109/CloudCom67567.2025.11331483.
+
+[15] Kubernetes SIG Scheduling, "KEP-2249: Namespace selector for pod affinity," kubernetes/enhancements. [Online]. Available: https://github.com/kubernetes/enhancements/tree/master/keps/sig-scheduling/2249-pod-affinity-namespace-selector
+
+[16] Microsoft, "Cluster isolation best practices for Azure Kubernetes Service (AKS)," Microsoft Learn. [Online]. Available: https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation
+
+[17] A. Kanso, S. Oks, M. Elzeiny, and G. Virdi, "Towards enabling hostile multi-tenancy in Kubernetes," in Proc. SC Workshops Int. Conf. High Perform. Comput. Netw. Storage Anal. (SC-W), 2025, pp. 172–178, doi: 10.1145/3731599.3767357.
+
+[18] Google Cloud, "Cluster multi-tenancy," GKE Documentation. [Online]. Available: https://docs.cloud.google.com/kubernetes-engine/docs/concepts/multitenancy-overview
+
+[19] A. Martin and M. Hausenblas, Hacking Kubernetes. Sebastopol, CA, USA: O'Reilly Media, 2021, ch. 7.
+
+[20] C. Fang, N. Nazari, B. Omidi, H. Wang, A. Puri, M. Arora, S. Rafatirad, H. Homayoun, and K. N. Khasawneh, "HeteroScore: Evaluating and mitigating cloud security threats brought by heterogeneity," in Proc. NDSS, 2023, doi: 10.14722/ndss.2023.24996.
+
+[21] L. Wang, M. Li, Y. Zhang, T. Ristenpart, and M. Swift, "Peeking behind the curtains of serverless platforms," in Proc. USENIX Annu. Tech. Conf. (ATC), 2018, pp. 133–146.
+
+[22] V. Varadarajan, T. Ristenpart, and M. Swift, "Scheduler-based defenses against cross-VM side-channels," in Proc. 23rd USENIX Security Symp., 2014.
+
+[23] Y. Azar, S. Kamara, I. Menache, M. Raykova, and B. Shepherd, "Co-location-resistant clouds," in Proc. ACM CCSW, 2014, pp. 9–20, doi: 10.1145/2664168.2664179.
+
+[24] S. Shringarputale, P. McDaniel, K. Butler, and T. La Porta, "Co-residency attacks on containers are real," in Proc. ACM Cloud Computing Security Workshop (CCSW), 2020, pp. 53–66, doi: 10.1145/3411495.3421357.
+
+[25] Z. N. Zhao, A. Morrison, C. W. Fletcher, and J. Torrellas, "Everywhere all at once: Co-location attacks on public cloud FaaS," in Proc. ACM ASPLOS, vol. 1, 2024, pp. 133–149, doi: 10.1145/3617232.3624867.
+
+[26] C. Fang, N. Nazari, B. Omidi, H. Wang, A. Puri, M. Arora, S. Rafatirad, H. Homayoun, and K. Khasawneh, "Assessing and mitigating heterogeneity-driven security threats in the cloud," ACM Trans. Internet Technol., vol. 25, no. 4, pp. 1–31, 2025, doi: 10.1145/3746228.
+
+[27] M. Rossi, M. Beretta, D. Facchinetti, and S. Paraboschi, "POSTER: Policy-driven security-aware scheduling in Kubernetes," in Proc. ACM Asia Conf. Computer and Communications Security (AsiaCCS), 2025, pp. 1800–1802, doi: 10.1145/3708821.3735343.
+
+[28] M. V. Le, S. Ahmed, D. Williams, and H. Jamjoom, "Securing container-based clouds with syscall-aware scheduling," in Proc. ACM Asia Conf. Computer and Communications Security (AsiaCCS), 2023, pp. 812–826, doi: 10.1145/3579856.3582835.
+
+[29] A. O. F. Atya, Z. Qian, S. V. Krishnamurthy, T. La Porta, P. McDaniel, and L. M. Marvel, "Catch me if you can: A closer look at malicious co-residency on the cloud," IEEE/ACM Trans. Netw., vol. 27, no. 2, pp. 560–576, Apr. 2019, doi: 10.1109/TNET.2019.2891528.
+
+[30] Y. Han, J. Chan, T. Alpcan, and C. Leckie, "Using virtual machine allocation policies to defend against co-resident attacks in cloud computing," IEEE Trans. Dependable Secure Comput., vol. 14, no. 1, pp. 95–108, 2017.
+
+[31] J. Han, W. Zang, M. Yu, and R. Sandhu, "Quantify co-residency risks in the cloud through deep learning," IEEE Trans. Dependable Secure Comput., vol. 18, no. 4, pp. 1568–1579, Jul.–Aug. 2021. [Online]. Available: https://ieeexplore.ieee.org/document/9234620
+
+[32] H. M. Makrani, H. Sayadi, N. Nazari, A. Sasan, K. N. Khasawneh, S. Rafatirad, and H. Homayoun, "Cloak & co-locate: Adversarial railroading of resource sharing-based attacks on the cloud," in Proc. IEEE Int. Symp. Secure and Private Execution Environment Design (SEED), 2021, pp. 1–13.
+
+[33] P. D. Ezhilchelvan and I. Mitrani, "Evaluating the probability of malicious co-residency in public clouds," IEEE Trans. Cloud Comput., vol. 5, no. 3, pp. 420–427, 2017.
+
+[34] Y. Zhang, M. Li, K. Bai, M. Yu, and W. Zang, "Incentive compatible moving target defense against VM-colocation attacks in clouds," in Proc. IFIP SEC, 2012, pp. 388–399.
+
+[35] J. Han, W. Zang, S. Chen, and M. Yu, "Reducing security risks of clouds through virtual machine placement," in Proc. DBSec, 2017.
+
+[36] Y. Jung, H. Jang, and Y. Shin, "PodBeater: Exploiting multi-value affinity for efficient co-location attacks in Kubernetes," in Information Security Applications (WISA 2025), Lecture Notes in Computer Science, vol. 16434. Singapore: Springer, 2025, pp. 15–27, doi: 10.1007/978-981-95-6857-4_2.
+
+[37] W. Shao, K. N. Khasawneh, S. Rafatirad, H. Homayoun, and C. Fang, "Kumo: A security-focused serverless cloud simulator," in Proc. IEEE/ACM CCGrid, 2026, arXiv:2603.19787.
+
+[38] C. Zheng, Q. Zhuang, and F. Guo, "A multi-tenant framework for cloud container services," in Proc. IEEE 41st Int. Conf. Distributed Computing Systems (ICDCS), 2021, pp. 359–369, doi: 10.1109/ICDCS51616.2021.00042.
+
+[39] M. Raj, P. Sanghani, and N. Shah, "NEXUS: Event-driven dependency-aware scheduler for bursty microservice workloads," J. Theor. Appl. Inf. Technol., vol. 104, no. 15, pp. 323–337, Aug. 2026.
+
+[40] Y. Zhang, A. Juels, A. Oprea, and M. K. Reiter, "HomeAlone: Co-residency detection in the cloud via side-channel analysis," in Proc. IEEE S&P, 2011, pp. 313–328.
+
+[41] M. S. Inci, B. Gulmezoglu, T. Eisenbarth, and B. Sunar, "Co-location detection on the cloud," in Proc. Int. Workshop Constructive Side-Channel Analysis and Secure Design (COSADE), 2016, pp. 19–34.
+
+[42] D. Sullivan, O. Arias, T. Meade, and Y. Jin, "Microarchitectural minefields: 4K-aliasing covert channel and multi-tenant detection in IaaS clouds," in Proc. NDSS, 2018.
+
+[43] A. Verma, L. Pedrosa, M. Korupolu, D. Oppenheimer, E. Tune, and J. Wilkes, "Large-scale cluster management at Google with Borg," in Proc. EuroSys, 2015, pp. 1–17.
+
+[44] M. Schwarzkopf, A. Konwinski, M. Abd-El-Malek, and J. Wilkes, "Omega: Flexible, scalable schedulers for large compute clusters," in Proc. EuroSys, 2013, pp. 351–364.
+
+[45] A. Gulati, A. Holler, M. Ji, G. Shanmuganathan, C. Waldspurger, and X. Zhu, "VMware distributed resource management: Design, implementation, and lessons learned," VMware Tech. J., vol. 1, no. 1, pp. 45–64, 2012.
+
+[46] Kubernetes Authors, "Scheduling framework," Kubernetes Documentation. [Online]. Available: https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/
+
+[47] Kubernetes Authors, "Assigning pods to nodes," Kubernetes Documentation. [Online]. Available: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
+
+[48] Kubernetes Authors, "Taints and tolerations," Kubernetes Documentation. [Online]. Available: https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
+
+[49] Kubernetes Authors, "Pod topology spread constraints," Kubernetes Documentation. [Online]. Available: https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/
+
+[50] J. Santos, T. Wauters, B. Volckaert, and F. De Turck, "Towards network-aware resource provisioning in Kubernetes for fog computing applications," in Proc. IEEE Conf. Network Softwarization (NetSoft), 2019, pp. 351–359.
+
+[51] Kubernetes Authors, "Multi-tenancy," Kubernetes Documentation. [Online]. Available: https://kubernetes.io/docs/concepts/security/multi-tenancy/
+
+[52] The Kubernetes Authors, "Kubernetes scheduler," Kubernetes Documentation. [Online]. Available: https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/. Accessed: Sep. 22, 2026.
+
+[53] Kubernetes Authors, "Resource quotas," Kubernetes Documentation. [Online]. Available: https://kubernetes.io/docs/concepts/policy/resource-quotas/
+
+[54] Kubernetes Authors, "Admission control in Kubernetes" (admission controllers reference), Kubernetes Documentation. [Online]. Available: https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
+
+[55] Open Policy Agent Authors, "OPA Gatekeeper: Policy and governance for Kubernetes." [Online]. Available: https://open-policy-agent.github.io/gatekeeper/website/
+
+[56] C. Carrión, "Kubernetes scheduling: Taxonomy, ongoing issues and challenges," ACM Comput. Surv., vol. 55, no. 7, Dec. 2022, Art. no. 138, doi: 10.1145/3539606.
+
+[57] Z. Rejiba and J. Chamanara, "Custom scheduling in Kubernetes: A survey on common problems and solution approaches," ACM Comput. Surv., vol. 55, no. 7, Dec. 2022, Art. no. 151, doi: 10.1145/3544788.
+
+[58] Doyensec, "Kubernetes scheduling and secure design," Doyensec Blog, Jan. 2024. [Online]. Available: https://blog.doyensec.com/2024/01/18/k8s-scheduling-secure-design.html
+
+[59] A. Fuerst and P. Sharma, "Locality-aware load-balancing for serverless clusters," in Proc. ACM HPDC, 2022, pp. 227–239.
+
+[60] G. Aumala, E. Boza, L. Ortiz-Avilés, G. Totoy, and C. Abad, "Beyond load balancing: Package-aware scheduling for serverless platforms," in Proc. IEEE/ACM CCGRID, 2019, pp. 282–291.
+
+[61] M. Abdi et al., "Palette load balancing: Locality hints for serverless functions," in Proc. EuroSys, 2023, pp. 365–380.
+
+[62] D. Duplyakin et al., "The design and operation of CloudLab," in Proc. USENIX Annu. Tech. Conf. (ATC), 2019, pp. 1–14.
+
+[63] C. Delimitrou and C. Kozyrakis, "Paragon: QoS-aware scheduling for heterogeneous datacenters," ACM SIGPLAN Notices, vol. 48, no. 4, pp. 77–88, 2013.
+
+[64] N. Nazari et al., "Adversarial attacks against machine learning-based resource provisioning systems," IEEE Micro, vol. 43, no. 5, pp. 35–44, 2023.
+
+[65] J. Chamberlain, J. Zheng, Z. Zhu, Z. Liu, and D. Starobinski, "Exploiting Kubernetes autoscaling for economic denial of sustainability," Proc. ACM Meas. Anal. Comput. Syst., vol. 9, no. 2, Jun. 2025, Art. no. 22, doi: 10.1145/3727114.
+
+[66] A. Chen, Z. Guo, Z. Jin, Z. Li, and Y. Chen, "Breaking the bulkhead: Demystifying cross-namespace reference vulnerabilities in Kubernetes operators," in Proc. NDSS, 2026, doi: 10.14722/ndss.2026.240761.
+
+[67] M. Bahrami, A. Malvankar, K. K. Budhraja, C. Kundu, M. Singhal, and A. Kundu, "Compliance-aware provisioning of containers on cloud," in Proc. IEEE Int. Conf. Cloud Computing (CLOUD), 2017.
+
+[68] M. Czapiński and R. Wolafka, "Workload security rings," USENIX ;login:, 2023. [Online]. Available: https://www.usenix.org/publications/loginmisc/workload-security-rings
+
+[69] A. Agache, M. Brooker, A. Iordache, A. Liguori, R. Neugebauer, P. Piwonka, and D.-M. Popa, "Firecracker: Lightweight virtualization for serverless applications," in Proc. 17th USENIX NSDI, 2020, pp. 419–434.
+
+[70] Kubernetes SIGs, "KWOK: Kubernetes without kubelet," GitHub. [Online]. Available: https://github.com/kubernetes-sigs/kwok
