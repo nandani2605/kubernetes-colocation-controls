@@ -1,0 +1,17 @@
+# C1: block the attacker namespace from using cross-namespace pod affinity.
+# This is the control the Kubernetes docs name against pod-affinity abuse (KEP-2249).
+# It limits the pod-mode attacker; it does NOT touch node-affinity copying.
+# run_experiment.py applies this automatically for --condition C1; this copy is
+# for inspection or manual use (kubectl apply -f this -n ns-attacker).
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: no-cross-ns-affinity
+  namespace: ns-attacker
+spec:
+  hard:
+    pods: "0"
+  scopeSelector:
+    matchExpressions:
+      - scopeName: CrossNamespacePodAffinity
+        operator: Exists

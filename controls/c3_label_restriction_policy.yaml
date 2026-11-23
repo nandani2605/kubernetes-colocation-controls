@@ -1,0 +1,51 @@
+# C3: limit which node-label keys a tenant namespace may request.
+# Built into Kubernetes (ValidatingAdmissionPolicy, CEL); no OPA Gatekeeper needed.
+# Here tenants may only request the 'hw.mem' key; requesting any other node label
+# in a nodeSelector or node affinity is denied. This blocks the node-mode
+# attacker from copying the victim's discriminating labels.
+# run_experiment.py builds this automatically for --condition C3 (with the keys
+# from --c3-allowed-keys); this copy is for inspection. Change the allow-list by
+# editing the three "'hw.mem'" occurrences.
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicy
+metadata:
+  name: restrict-node-labels
+spec:
+  failurePolicy: Fail
+  matchConstraints:
+    resourceRules:
+      - apiGroups: [""]
+        apiVersions: ["v1"]
+        operations: ["CREATE", "UPDATE"]
+        resources: ["pods"]
+  validations:
+    - expression: >-
+        !has(object.spec.nodeSelector) ||
+        object.spec.nodeSelector.all(k, k in ['hw.mem'])
+      message: "nodeSelector uses a node label this tenant may not request"
+    - expression: >-
+        !has(object.spec.affinity) ||
+        !has(object.spec.affinity.nodeAffinity) ||
+        !has(object.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution) ||
+        object.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.all(t,
+          !has(t.matchExpressions) || t.matchExpressions.all(e, e.key in ['hw.mem']))
+      message: "required node affinity uses a node label this tenant may not request"
+    - expression: >-
+        !has(object.spec.affinity) ||
+        !has(object.spec.affinity.nodeAffinity) ||
+        !has(object.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution) ||
+        object.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.all(p,
+          !has(p.preference.matchExpressions) || p.preference.matchExpressions.all(e, e.key in ['hw.mem']))
+      message: "preferred node affinity uses a node label this tenant may not request"
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicyBinding
+metadata:
+  name: restrict-node-labels-binding
+spec:
+  policyName: restrict-node-labels
+  validationActions: ["Deny"]
+  matchResources:
+    namespaceSelector:
+      matchLabels:
+        tenant: "true"
